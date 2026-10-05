@@ -1,0 +1,22 @@
+{
+  "purpose": "External research / bootstrap evidence; not the 3-class Normal/Peripheral/Central training set.",
+  "dataset": "360EM",
+  "source": "GIN / author-hosted 360_em_dataset",
+  "participants": 13,
+  "videos": 15,
+  "approxEyeTrackingDurationHours": 3.5,
+  "eventLabels": [
+    "fixation",
+    "saccade",
+    "smooth pursuit",
+    "noise",
+    "VOR",
+    "OKN"
+  ],
+  "bootstrapTrainExamples": 18000,
+  "bootstrapTestExamples": 24000,
+  "bootstrapHeldOutAccuracy": 0.25,
+  "rawArchiveApproxSizeGB": 1.68,
+  "rawDatasetIncludedInProject": false,
+  "reasonRawNotIncluded": "The full raw archive is very large and is not required by the Expo runtime. Provenance is kept here; the current 3-class demo classifier is trained from the included synthetic dataset."
+}

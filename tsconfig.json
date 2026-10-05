@@ -16,5 +16,11 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+  ],
+  "exclude": [
+    "_patch_backups",
+    "_patch_backups/**",
+    "functions",
+    "functions/**"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "folder": "dataset",
+  "currentClassifierDataset": "ai-training-dataset.json",
+  "featureSchema": "08d-real-metric-full-battery-v1",
+  "featureCount": 48,
+  "exampleCount": 108,
+  "syntheticSubjects": 54,
+  "labels": [
+    "Normal",
+    "Peripheral",
+    "Central"
+  ],
+  "trainingData": "synthetic metric profiles",
+  "realPatientTrainingData": false,
+  "runtimeInput": "real metrics measured from the six Full Battery tests",
+  "trainingToolchain": "Python + NumPy + scikit-learn",
+  "runtimeModel": "model-runtime.snapshot.ts"
+}

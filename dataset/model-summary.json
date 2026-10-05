@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "central-vestibular-ai-evidence-v2",
+  "currentDemoClassifier": {
+    "labels": [
+      "Normal",
+      "Peripheral",
+      "Central"
+    ],
+    "algorithm": "class-weighted multinomial logistic regression",
+    "featureSchema": "08d-real-metric-full-battery-v1",
+    "featureCount": 48,
+    "dataset": "ai-training-dataset.json",
+    "examples": 108,
+    "syntheticSubjects": 54,
+    "subjectsPerClass": 18,
+    "examplesPerSubject": 2,
+    "heldOutExamples": 30,
+    "heldOutSubjects": 15,
+    "syntheticHeldOutAccuracy": 0.9,
+    "syntheticMacroF1": 0.8976982097186701,
+    "confusionMatrixLabelOrder": [
+      "normal",
+      "peripheral",
+      "central"
+    ],
+    "syntheticConfusionMatrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        3,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ],
+    "runtimeInput": "48 real metrics/derived values from the six-test Full Battery",
+    "note": "Training labels remain synthetic demo labels. Held-out results are software/demo evidence, not clinical accuracy."
+  },
+  "runtimeLocationInApp": [
+    "src/ai/generated-clinical-research-runtime.ts",
+    "src/services/ai-full-battery-features.service.ts",
+    "src/services/ai-clinical-research-runtime.service.ts",
+    "src/services/ai-integrated-result.service.ts",
+    "src/components/ai/AIIntegratedAssistCard.tsx"
+  ]
+}
